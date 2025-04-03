@@ -1,0 +1,162 @@
+/* 1. Universal Selector (Applies to all elements) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+/* 3. Styling a Heading (Using an ID Selector) */
+#main-heading {
+    color: #0066cc;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #333;
+}
+
+/* 4. Styling an Image */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #0066cc;
+    border-radius: 10px;
+    width: 50%;
+}
+
+/* 5. Paragraph Styling (Using a Class Selector) */
+.paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 10px;
+    border-left: 5px solid #0066cc;
+}
+
+/* 6. Button Styling */
+.button {
+    display: block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #004999;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Section */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+/* Flexbox Layout for Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Style for Articles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Tablet screen */
+    .content {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile screen */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .button {
+        width: 80%;
+    }
+}
